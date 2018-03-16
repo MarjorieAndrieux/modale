@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Num chambre</th>
+                                <th scope="col">Nb de personne</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="form-group">
+                                        <input type="number" name="type_chambre">
+                                </th>
+                                <th scope="row">
+                                    <input type="number" name="type_chambre">
+                                </th>
+                                <th scope="row">
+                                    <div class="form-group">
+                                        <input id="date" type="date">
+                                    </div>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1>Réserver une chambre d'hotel</h1>
+        <div id="selection">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nom de l'hôtel</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" id="hotel1">Hôtel de la gare</th>
+                        <td>
+                            <button id="reservation1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Réserver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="hotel2">Hôtel du port</th>
+                        <td>
+                            <button id="reservation2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Réserver</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" id="hotel3">L'Hôtel de l'angle de la rue</th>
+                        <td>
+                            <button id="reservation3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Réserver</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="js/anim.js"></script>
+</body>
+
+</html>
